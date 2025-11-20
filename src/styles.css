@@ -1,1 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 dark:bg-black;
+  font-family: "Outfit", "Red Hat Text", "Noto Sans Syriac Western", sans-serif;
+}
+
+p {
+  @apply text-zinc-800 dark:text-white;
+}
+
+main {
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "profile"
+    "about"
+    "techStack"
+    "experience"
+    "beyondCoding"
+    "certifications"
+    "projects"
+    "connect"
+    "recommendations";
+}
+
+section:nth-child(1) {
+  grid-area: profile;
+}
+
+section:nth-child(2) {
+  grid-area: about;
+}
+
+section:nth-child(3) {
+  grid-area: techStack;
+}
+
+section:nth-child(4) {
+  grid-area: experience;
+}
+
+section:nth-child(5) {
+  grid-area: beyondCoding;
+}
+
+section:nth-child(6) {
+  grid-area: certifications;
+}
+
+section:nth-child(7) {
+  grid-area: projects;
+}
+
+section:nth-child(8) {
+  grid-area: connect;
+}
+
+section:nth-child(9) {
+  grid-area: recommendations;
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-areas:
+      "profile profile profile"
+      "about about experience"
+      "about about experience"
+      "techStack techStack experience"
+      "techStack techStack experience"
+      "techStack techStack beyondCoding"  
+      "certifications projects projects"
+      "connect recommendations recommendations";
+  }
+}

@@ -1,0 +1,370 @@
+<main class="w-[90%] max-w-[1000px] mx-auto dark:text-white mt-4 animate-slideUp">
+  <!-- Profile -->
+  <section
+    class="flex flex-col-reverse w-full lg:flex-row justify-between w-full"
+  >
+    <div class="p-3 flex justify-center flex-col lg:flex-row gap-5">
+      <div class="flex justify-center">
+        <img src="IMG_2680.jpg" class="rounded-lg w-40 h-40" alt="kort buset" />
+      </div>
+
+      <div class="flex flex-col justify-center items-center lg:items-start">
+        <h1 class="text-2xl font-bold">Kurt Cagulang</h1>
+        <p>Cebu, Philippines</p>
+        <h1 class="text-xl">Frontend Developer</h1>
+        <div class="flex gap-3 justify-center mt-3">
+          <button
+            class="bg-black dark:bg-white px-4 py-1 rounded-md text-white dark:text-black"
+          >
+            <i class="fas fa-envelope mr-2"></i>Send Email
+          </button>
+          <button
+            class="bg-black dark:bg-white px-4 py-1 rounded-md text-white dark:text-black"
+          >
+            <i class="fas fa-file-alt mr-2"></i>View Resume
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex justify-end items-center lg:items-start gap-4 rounded-lg p-3"
+    >
+      <label class="relative inline-flex items-center cursor-pointer">
+        <input
+          type="checkbox"
+          class="sr-only peer"
+          [(ngModel)]="darkMode"
+          (change)="toggleDarkMode()"
+        />
+
+        <!-- track -->
+        <div
+          class="w-11 h-6 bg-gray-300 dark:bg-gray-500 peer-focus:outline-none rounded-full peer peer-checked:bg-gray-900 dark:peer-checked:bg-gray-200 transition-all duration-300"
+        ></div>
+
+        <!-- knob -->
+        <div
+          class="absolute left-1 top-1 bg-white dark:bg-gray-900 w-4 h-4 rounded-full transition-all duration-300 peer-checked:translate-x-5"
+        ></div>
+      </label>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section
+    class="dark:bg-zinc-900 rounded-xl shadow-xl p-3 border border-transparent dark:border dark:border-zinc-800"
+  >
+    <div>
+      <p class="text-xl font-bold">About</p>
+    </div>
+
+    <div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
+        iure vero alias illo sint hic ipsa sunt deserunt, laborum culpa nesciunt
+        quod enim delectus distinctio aut placeat modi numquam veritatis.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section
+    class="dark:bg-zinc-900 bg-white rounded-xl shadow-lg p-6 border border-transparent dark:border dark:border-zinc-800"
+  >
+    <h2 class="text-2xl font-bold mb-4">Tech Stack</h2>
+
+    <div class="mb-5">
+      <p class="font-semibold text-lg mb-2">Frontend</p>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm">
+          Angular JS
+        </span>
+        <span class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm">
+          JavaScript
+        </span>
+        <span class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm">
+          TypeScript
+        </span>
+        <span class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm">
+          SEO
+        </span>
+        <span class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm">
+          Tailwind CSS
+        </span>
+        <span class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm">
+          Bootstrap CSS
+        </span>
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <p class="font-semibold text-lg mb-2">Backend</p>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm">
+          REST API
+        </span>
+        <span class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm">
+          Node.js
+        </span>
+        <span class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm">
+          Express.js
+        </span>
+        <span class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm">
+          MySQL
+        </span>
+      </div>
+    </div>
+
+    <div>
+      <p class="font-semibold text-lg mb-2">Others</p>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm">
+          Github Actions
+        </span>
+        <span class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm">
+          npm
+        </span>
+        <span class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm">
+          Claude
+        </span>
+        <span class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm">
+          ChatGPT
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section
+    class="dark:bg-zinc-900 rounded-xl shadow-xl p-3 border border-transparent dark:border dark:border-zinc-800"
+  >
+    <div>
+      <p class="text-xl font-bold">Experience</p>
+    </div>
+  </section>
+
+  <!-- Beyond Coding -->
+  <section
+    class="dark:bg-zinc-900 rounded-xl shadow-xl p-3 border border-transparent dark:border dark:border-zinc-800"
+  >
+    <div>
+      <p class="text-xl font-bold">Beyond Coding</p>
+    </div>
+
+    <div>
+      <p class="textleading-relaxed">
+        When I'm not coding, you'll usually find me riding my motorcycle,
+        working on becoming a better version of myself, hitting the gym or going
+        for a run, and making time for family and close friends.
+      </p>
+    </div>
+  </section>
+
+  <!-- Recent Certifications -->
+  <section
+    class="dark:bg-zinc-900 rounded-xl shadow-xl p-3 border border-transparent dark:border dark:border-zinc-800"
+  >
+    <div>
+      <p class="text-xl font-bold">Recent Certifications</p>
+    </div>
+
+    <div class="mt-2">
+      <ul class="list-none text-zinc-300">
+        <li>
+          <a
+            href="https://northwindhotel.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block px-4 py-2 bg-zinc-200 dark:bg-zinc-800 rounded-md text-zinc-800 dark:text-white"
+          >
+            <span class="block"> Cebu Interschool Hackathon </span>
+            Northwind Hotel (2023)
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Recent Projects -->
+  <section
+    class="dark:bg-zinc-900 rounded-xl shadow-xl p-4 border border-transparent dark:border dark:border-zinc-800"
+  >
+    <div class="flex justify-between items-center mb-4">
+      <p class="text-xl font-bold">Recent Projects</p>
+
+      <button routerLink="/projects"
+        class="font-medium transition-all duration-300 transform hover:scale-105"
+      >
+        View all <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <div class="flex gap-3 flex-col lg:flex-row">
+      <div
+        class="bg-zinc-200 dark:bg-zinc-800 p-4 rounded-lg shadow-sm hover:shadow-lg transition-all"
+      >
+        <h3 class="text-lg font-semibold text-zinc-800 dark:text-white">
+          Senior High School Grading System
+        </h3>
+
+        <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">
+          A full-featured grading system for SHS with role-based access (Admin &
+          Teacher), grade computation, subject management, and automated class
+          handling.
+        </p>
+
+        <a
+          href="https://capstone-grading-system.vercel.app/account/login"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-md bg-zinc-300 dark:bg-zinc-700 text-zinc-800 dark:text-white text-sm font-medium hover:bg-zinc-400 dark:hover:bg-zinc-600 transition-all shadow-sm hover:shadow-md"
+        >
+          <i class="fas fa-external-link-alt text-xs"></i>
+          View Project
+        </a>
+      </div>
+
+      <div
+        class="bg-zinc-200 dark:bg-zinc-800 p-4 rounded-lg shadow-sm hover:shadow-lg transition-all"
+      >
+        <h3 class="text-lg font-semibold text-zinc-800 dark:text-white">
+          Multi Step Form
+        </h3>
+
+        <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-1">
+          A modern multi-step form built with Angular, featuring smooth
+          transitions, real-time validation, and responsive UI. Designed to
+          collect user information in a clean, structured, and user-friendly
+          flow.
+        </p>
+
+        <a
+          href="https://multi-step-form-blush-pi.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-md bg-zinc-300 dark:bg-zinc-700 text-zinc-800 dark:text-white text-sm font-medium hover:bg-zinc-400 dark:hover:bg-zinc-600 transition-all shadow-sm hover:shadow-md"
+        >
+          <i class="fas fa-external-link-alt text-xs"></i>
+          View Project
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect -->
+  <section
+    class="dark:bg-zinc-900 rounded-xl shadow-xl p-3 border border-transparent dark:border dark:border-zinc-800"
+  >
+    <div>
+      <p class="text-xl font-bold">Connect</p>
+    </div>
+
+    <div class="mt-2">
+      <ul class="list-none text-zinc-300">
+        <li
+          class="mb-2 block px-4 py-2 bg-zinc-200 dark:bg-zinc-800 rounded-md text-zinc-800 dark:text-white"
+        >
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><span class="block text-gray-500"> Gmail </span>
+            kurtcagulang&#64;gmail.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="list-none text-zinc-300">
+        <li
+          class="mt-2 block px-4 py-2 bg-zinc-200 dark:bg-zinc-800 rounded-md text-zinc-800 dark:text-white"
+        >
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><span class="block text-gray-500"> Phone </span>
+            09941264614
+          </a>
+        </li>
+      </ul>
+
+      <ul class="list-none text-zinc-300">
+        <li
+          class="mt-2 block px-4 py-2 bg-zinc-200 dark:bg-zinc-800 rounded-md text-zinc-800 dark:text-white"
+        >
+          <span class="block text-gray-500 mb-1">Social Links</span>
+
+          <div class="flex items-center gap-4 text-2xl">
+            <!-- GitHub -->
+            <a
+              href="https://github.com/kurtbuset"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-gray-400 transition-colors"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/kurt-cagulang"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-gray-400 transition-colors"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/kurt_busetttt"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-gray-400 transition-colors"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Recommendations -->
+  <section
+    class="dark:bg-zinc-900 rounded-xl shadow-xl p-4 border border-transparent dark:border dark:border-zinc-800"
+  >
+    <p class="text-xl font-bold mb-4">Recommendations</p>
+
+    <!-- Carousel Container -->
+    <div class="relative w-full overflow-hidden">
+      <!-- Slides -->
+      <div
+        *ngFor="let rec of recommendations; let i = index"
+        [class.hidden]="i !== currentSlide"
+        class="transition-opacity duration-700"
+        [class.opacity-0]="i !== currentSlide"
+        [class.opacity-100]="i === currentSlide"
+      >
+        <div class="bg-zinc-200 dark:bg-zinc-800 p-5 rounded-lg shadow-sm">
+          <p class="text-lg font-semibold text-zinc-800 dark:text-white">
+            {{ rec.name }} — {{ rec.role }}
+          </p>
+          <p
+            class="text-sm text-zinc-600 dark:text-zinc-400 mt-2 leading-relaxed"
+          >
+            "{{ rec.text }}"
+          </p>
+        </div>
+      </div>
+
+      <!-- Dots -->
+      <div class="flex justify-center gap-2 mt-4">
+        <button
+          *ngFor="let rec of recommendations; let i = index"
+          (click)="goToSlide(i)"
+          class="w-3 h-3 rounded-full"
+          [class.bg-zinc-800]="currentSlide === i"
+          [class.dark:bg-white]="currentSlide === i"
+          [class.bg-zinc-400]="currentSlide !== i"
+          [class.dark:bg-zinc-600]="currentSlide !== i"
+        ></button>
+      </div>
+    </div>
+  </section>
+</main>
