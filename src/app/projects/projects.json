@@ -3,7 +3,7 @@
     "id": 1,
     "link-params": "senior-high-school-grading-system",
     "title": "Senior High School Grading System",
-    "description": "A full-featured grading system for SHS with role-based access (Admin & Teacher), grade computation, subject management, and automated class handling.",
+    "description": "Developed a multi-role grading system with Superadmin, Registrar, Principal, Teacher, and Student roles. Teachers grade students and lock/unlock subjects per quarter. Principals assign subjects and monitor grade submissions. Registrars and Principals can view student grades and locking history. Students can securely access their final grades once released. The system ensures controlled access, grade transparency, and efficient academic workflow.",
     "image": "assets/grading-system-gallery/1.png",
     "tech": ["Angular JS", "JavaScript", "Node.js", "Express JS", "MySQL", "Bootstrap CSS"],
     "link": "https://capstone-grading-system.vercel.app/account/login",
