@@ -1,16 +1,52 @@
 [
   {
+    "id": 1,
+    "link-params": "senior-high-school-grading-system",
     "title": "Senior High School Grading System",
     "description": "A full-featured grading system for SHS with role-based access (Admin & Teacher), grade computation, subject management, and automated class handling.",
-    "image": "assets/test.jpg",
-    "tech": ["Angular JS", "JavaScript", "Node.js", "MySQL", "Bootstrap CSS"],
-    "link": "https://capstone-grading-system.vercel.app/account/login"
+    "image": "assets/grading-system-gallery/1.png",
+    "tech": ["Angular JS", "JavaScript", "Node.js", "Express JS", "MySQL", "Bootstrap CSS"],
+    "link": "https://capstone-grading-system.vercel.app/account/login",
+    "gallery": {
+      "image-1": "assets/grading-system-gallery/1.png",
+      "image-2": "assets/grading-system-gallery/2.png",
+      "image-3": "assets/grading-system-gallery/3.png",
+      "image-4": "assets/grading-system-gallery/4.png",
+      "image-5": "assets/grading-system-gallery/5.png",
+      "image-6": "assets/grading-system-gallery/6.png",
+      "image-7": "assets/grading-system-gallery/7.png",
+      "image-8": "assets/grading-system-gallery/8.png",
+      "image-9": "assets/grading-system-gallery/9.png",
+      "image-10": "assets/grading-system-gallery/10.png",
+      "image-11": "assets/grading-system-gallery/11.png",
+      "image-12": "assets/grading-system-gallery/12.png",
+      "image-13": "assets/grading-system-gallery/13.png",
+      "image-14": "assets/grading-system-gallery/14.png",
+      "image-15": "assets/grading-system-gallery/15.png",
+      "image-16": "assets/grading-system-gallery/16.png",
+      "image-17": "assets/grading-system-gallery/17.png",
+      "image-18": "assets/grading-system-gallery/18.png",
+      "image-19": "assets/grading-system-gallery/19.png",
+      "image-20": "assets/grading-system-gallery/20.png",
+      "image-21": "assets/grading-system-gallery/21.png",
+      "image-22": "assets/grading-system-gallery/22.png"
+    }
   },
   {
+    "id": 2,
+    "link-params": "multi-step-form",
     "title": "Multi Step Form",
     "description": "A modern multi-step form built with Angular, featuring smooth transitions, real-time validation, and responsive UI.",
-    "image": "assets/test.jpg",
+    "image": "assets/multi-step-form-gallery/1.png",
     "tech": ["Angular", "TypeScript", "Tailwind CSS"],
-    "link": "https://multi-step-form-blush-pi.vercel.app"
+    "link": "https://multi-step-form-blush-pi.vercel.app",
+    "gallery": {
+      "image-1": "assets/multi-step-form-gallery/1.png",
+      "image-2": "assets/multi-step-form-gallery/2.png",
+      "image-3": "assets/multi-step-form-gallery/3.png",
+      "image-4": "assets/multi-step-form-gallery/4.png",
+      "image-5": "assets/multi-step-form-gallery/5.png"
+    }
   }
 ]
+  

@@ -1,41 +1,56 @@
-<div
-  class="w-[90%] max-w-[1000px] mx-auto dark:text-white mt-4 animate-slideUp py-4"
->
+<div class="animate-slideUp">
   <button
     routerLink="/"
     class="font-medium transition-all duration-300 transform hover:scale-105"
   >
-    <i class="fa-solid fa-arrow-left"></i> Go Back
+    <i class="fa-solid fa-arrow-left"></i> Go back
   </button>
 
   <p class="text-4xl font-bold mb-4">Recent Projects</p>
   <p>Here are some projects I've worked recently.</p>
 
   <div class="mt-4 grid gap-4 lg:grid-cols-2">
-    <div *ngFor="let project of projects" class="dark:bg-zinc-900 rounded-lg shadow-xl p-3 border border-transparent dark:border dark:border-zinc-800 rounded-lg">
-      <img
-        [src]="project.image"
-        alt="{{ project.title }}"
-        class="w-full h-[200px] object-cover rounded-t-md"
-      />
+    <div
+      *ngFor="let project of projects"
+      class="dark:bg-zinc-900 rounded-lg shadow-xl p-3 border border-transparent dark:border dark:border-zinc-800 rounded-lg cursor-pointer"
+    >
+      <!-- CLICK ENTIRE CARD TO GO TO VIEW COMPONENT -->
+      <div
+        [routerLink]="[project['link-params']]"
+        class="block"
+      >
+        <img
+          [src]="project.image"
+          alt="{{ project.title }}"
+          class="w-full h-[200px] object-cover rounded-t-md"
+        />
 
-      <div class="p-4">
-        <a
-          [href]="project.link"
-          target="_blank"
-          class="text-xl font-bold hover:underline"
-        >
-          {{ project.title }}
-        </a>
-        <p>{{ project.description }}</p>
+        <div class="p-4">
+          <div class="flex justify-between items-start">
+            <p class="text-xl font-bold">
+              {{ project.title }}
+            </p>
 
-        <div class="flex flex-wrap gap-2 mt-2">
-          <span
-            *ngFor="let tech of project.tech"
-            class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm"
-          >
-            {{ tech }}
-          </span>
+            <!-- External link icon (does NOT trigger routerLink) -->
+            <a
+              [href]="project.link"
+              target="_blank"
+              (click)="$event.stopPropagation()"
+            >
+              <i class="fa-solid fa-link"></i>
+            </a>
+          </div>
+
+          <p>{{ project.description }}</p>
+
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span
+              *ngFor="let tech of project.tech"
+              class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm"
+            >
+              {{ tech }}
+            </span>
+          </div>
         </div>
       </div>
     </div>

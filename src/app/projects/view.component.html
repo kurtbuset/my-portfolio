@@ -1,0 +1,94 @@
+<div class="animate-slideUp max-w-4xl mx-auto p-4">
+  <!-- Back button -->
+  <button
+    routerLink="/projects"
+    class="font-medium transition-all duration-300 transform hover:scale-105 mb-6 flex items-center gap-2"
+  >
+    <i class="fa-solid fa-arrow-left"></i> Go back to Projects
+  </button>
+
+  <!-- Project details -->
+  <div *ngIf="project" class="bg-white dark:bg-zinc-900 rounded-lg shadow-xl overflow-hidden">
+    
+    <!-- Project Image -->
+    <img
+      [src]="project.image"
+      [alt]="project.title"
+      class="w-full h-[300px] object-cover"
+    />
+
+    <div class="p-6 space-y-4">
+      <!-- Title and Visit Project -->
+      <div class="flex flex-col lg:flex-row justify-between items-center gap-3">
+        <h1 class="text-3xl font-bold">{{ project.title }}</h1>
+
+        <a
+          [href]="project.link"
+          target="_blank"
+          class="inline gap-2 px-4 py-2 rounded-md bg-zinc-300 dark:bg-zinc-700 text-zinc-800 dark:text-white text-sm font-medium hover:bg-zinc-400 dark:hover:bg-zinc-600 transition-all shadow-sm hover:shadow-md"
+        >
+          <i class="fa-solid fa-link"></i> Visit Project
+        </a>
+      </div>
+
+      <!-- Description -->
+      <p>{{ project.description }}</p>
+
+      <!-- Tech stack -->
+      <div class="flex flex-wrap gap-2">
+        <span *ngFor="let tech of project.tech" class="px-3 py-1 rounded-md bg-zinc-200 dark:bg-zinc-800 text-sm">
+          {{ tech }}
+        </span>
+      </div>
+
+      <!-- Gallery -->
+      <div *ngIf="project.gallery" class="mt-6">
+        <p class="font-semibold mb-2 text-2xl">Gallery</p>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+          <img
+            *ngFor="let img of gallery; let i = index"
+            [src]="img"
+            class="w-full h-32 object-cover rounded-md cursor-pointer hover:scale-105 transition-transform"
+            (click)="openImage(i)"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- If project not found -->
+  <p *ngIf="!project" class="text-center text-red-500 mt-4">Project not found.</p>
+</div>
+
+<!-- Modal for photo viewer -->
+<div
+  *ngIf="selectedImage"
+  class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 lg:w-2/3 mx-auto"
+>
+  <!-- Close modal -->
+  <div class="absolute top-4 right-4 text-white text-3xl cursor-pointer" (click)="closeModal()">
+    &times;
+  </div>
+
+  <!-- Previous arrow -->
+  <div
+    class="absolute left-4 text-white text-3xl cursor-pointer select-none"
+    (click)="prevImage()"
+  >
+    &#10094;
+  </div>
+
+  <!-- Next arrow -->
+  <div
+    class="absolute right-4 text-white text-3xl cursor-pointer select-none"
+    (click)="nextImage()"
+  >
+    &#10095;
+  </div>
+
+  <!-- Selected image -->
+  <img
+    [src]="selectedImage"
+    class="max-w-[90%] max-h-[90%] rounded-lg shadow-lg"
+  />
+</div>
