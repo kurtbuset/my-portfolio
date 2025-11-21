@@ -1,4 +1,6 @@
-<main class="w-[90%] max-w-[1000px] mx-auto dark:text-white mt-4 animate-slideUp">
+<main
+  class="w-[90%] max-w-[1000px] mx-auto dark:text-white mt-4 animate-slideUp"
+>
   <!-- Profile -->
   <section
     class="flex flex-col-reverse w-full lg:flex-row justify-between w-full"
@@ -10,8 +12,8 @@
 
       <div class="flex flex-col justify-center items-center lg:items-start">
         <h1 class="text-2xl font-bold">Kurt Cagulang</h1>
-        <p>Cebu, Philippines</p>
-        <h1 class="text-xl">Frontend Developer</h1>
+        <p>Liloan, Cebu, Philippines</p>
+        <h1 class="text-xl">Full Stack Developer</h1>
         <div class="flex gap-3 justify-center mt-3">
           <button
             class="bg-black dark:bg-white px-4 py-1 rounded-md text-white dark:text-black"
@@ -55,7 +57,8 @@
   <section
     class="dark:bg-zinc-900 rounded-xl shadow-xl p-3 border border-transparent dark:border dark:border-zinc-800"
   >
-    <div>
+    <div class="flex items-center gap-2">
+      <i class="fa-solid fa-briefcase text-sm"></i>
       <p class="text-xl font-bold">About</p>
     </div>
 
@@ -70,9 +73,12 @@
 
   <!-- Tech Stack -->
   <section
-    class="dark:bg-zinc-900 bg-white rounded-xl shadow-lg p-6 border border-transparent dark:border dark:border-zinc-800"
+    class="dark:bg-zinc-900 bg-white rounded-xl shadow-lg p-3 border border-transparent dark:border dark:border-zinc-800"
   >
-    <h2 class="text-2xl font-bold mb-4">Tech Stack</h2>
+    <div class="flex items-center gap-2">
+      <i class="fa-solid fa-code text-sm"></i>
+      <p class="text-xl font-bold">Tech Stack</p>
+    </div>
 
     <div class="mb-5">
       <p class="font-semibold text-lg mb-2">Frontend</p>
@@ -139,7 +145,8 @@
   <section
     class="dark:bg-zinc-900 rounded-xl shadow-xl p-3 border border-transparent dark:border dark:border-zinc-800"
   >
-    <div>
+    <div class="flex items-center gap-2">
+      <i class="fa-solid fa-briefcase"></i>
       <p class="text-xl font-bold">Experience</p>
     </div>
   </section>
@@ -148,7 +155,8 @@
   <section
     class="dark:bg-zinc-900 rounded-xl shadow-xl p-3 border border-transparent dark:border dark:border-zinc-800"
   >
-    <div>
+    <div class="flex items-center gap-2">
+      <i class="fa-solid fa-book-open"></i>
       <p class="text-xl font-bold">Beyond Coding</p>
     </div>
 
@@ -165,7 +173,8 @@
   <section
     class="dark:bg-zinc-900 rounded-xl shadow-xl p-3 border border-transparent dark:border dark:border-zinc-800"
   >
-    <div>
+    <div class="flex items-center gap-2">
+      <i class="fa-solid fa-certificate"></i>
       <p class="text-xl font-bold">Recent Certifications</p>
     </div>
 
@@ -191,9 +200,13 @@
     class="dark:bg-zinc-900 rounded-xl shadow-xl p-4 border border-transparent dark:border dark:border-zinc-800"
   >
     <div class="flex justify-between items-center mb-4">
-      <p class="text-xl font-bold">Recent Projects</p>
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-list-check"></i>
+        <p class="text-xl font-bold">Recent Projects</p>
+      </div>
 
-      <button routerLink="/projects"
+      <button
+        routerLink="/projects"
         class="font-medium transition-all duration-300 transform hover:scale-105"
       >
         View all <i class="fa-solid fa-arrow-right"></i>
@@ -256,7 +269,8 @@
   <section
     class="dark:bg-zinc-900 rounded-xl shadow-xl p-3 border border-transparent dark:border dark:border-zinc-800"
   >
-    <div>
+    <div class="flex items-center gap-2">
+      <i class="fa-regular fa-envelope"></i>
       <p class="text-xl font-bold">Connect</p>
     </div>
 
@@ -329,7 +343,10 @@
   <section
     class="dark:bg-zinc-900 rounded-xl shadow-xl p-4 border border-transparent dark:border dark:border-zinc-800"
   >
-    <p class="text-xl font-bold mb-4">Recommendations</p>
+    <div class="flex items-center gap-2 mb-4">
+      <i class="fa-regular fa-comment"></i>
+      <p class="text-xl font-bold">Recommendations</p>
+    </div>
 
     <!-- Carousel Container -->
     <div class="relative w-full overflow-hidden">

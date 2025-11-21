@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import projectsData from './data.json'
+import projectsData from './projects.json'
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -13,5 +13,5 @@ export class ListComponent {
 
   ngOnInit() {
     this.projects = projectsData;
-  }
+  } 
 }

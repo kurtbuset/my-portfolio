@@ -10,7 +10,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   templateUrl: 'profile.component.html',
 })
 export class ProfileComponent {
-  darkMode = false;
+  darkMode = true;
   recommendations = [
     {
       name: 'George Floyd',
@@ -29,6 +29,7 @@ export class ProfileComponent {
   constructor(private renderer: Renderer2) {}
 
   ngOnInit() {
+
     setInterval(() => {
       this.nextSlide();
     }, 4000); // 4 seconds per slide
